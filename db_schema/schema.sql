@@ -12,9 +12,9 @@ CREATE  TABLE IF NOT EXISTS `blogtutorial`.`users` (
   `id` MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `username` VARCHAR(50) NOT NULL ,
   `email` VARCHAR(50) NOT NULL ,
-  `password` VARCHAR(20) NOT NULL ,
+  `password` VARCHAR(40) NOT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `INDEX_login` (`email` ASC, `password` ASC) )
+  INDEX `login_idx` (`email` ASC, `password` ASC) )
 ENGINE = InnoDB;
 
 
