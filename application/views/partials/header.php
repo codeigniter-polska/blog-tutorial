@@ -42,7 +42,7 @@
                   Jeśli tak, to do tagu <li> dodajemy klasę "active", która zmieni wygląd tego elementu.
                   Aby dowiedzieć się jak działa funkcja rsegment zajrzyj do podręcznika: http://podrecznik.codeigniter.org.pl/libraries/uri.html
               -->
-              <li <?php echo ($this->uri->rsegment('2') == 'list') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('posts/list'); ?>">Lista</a></li>
+              <li <?php echo ($this->uri->rsegment('2') == 'index') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('posts/index'); ?>">Lista</a></li>
               <li <?php echo ($this->uri->rsegment('2') == 'add') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('posts/add'); ?>">Dodaj</a></li>
             </ul>
             <ul class="nav pull-right">
