@@ -8,6 +8,8 @@ class Posts extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		// Ładujemy bibilotekę sesji
+		$this->load->library('session');
 
 		// Sprawdzamy, czy obecnie wywoływana metoda znajduje się w tablicy $resricted
 		if (in_array($this->uri->rsegment(2), $this->restricted))
