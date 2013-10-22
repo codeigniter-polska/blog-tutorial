@@ -18,7 +18,7 @@ class Users extends CI_Controller
 		$this->form_validation->set_error_delimiters('<div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">×</a>', '</div>');
 
 		// Ustalamy reguły walidacji dla formularza
-		$this->form_validation->set_rules('email', 'Login', 'required|trim|xss_clear');
+		$this->form_validation->set_rules('email', 'Login', 'required|trim|valid_email|xss_clear');
 		$this->form_validation->set_rules('password', 'Hasło', 'required|trim|sha1');
 
 		// Sprawdzamy, czy formularz został wysłany i czy wystąpiły błędy walidacji
