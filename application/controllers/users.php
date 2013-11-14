@@ -61,7 +61,7 @@ class Users extends CI_Controller
 				// ustawiamy zmienną flashadata o nazwie error i podajemy komunikat o niepowodzeniu logowania.
 				$this->session->set_flashdata('error', 'Podany login lub hasło są nieprawidłowe!');
 				// Przekierowujemy użytkownika na stronę logowania podając dla funkcji nazwę kontrolera/metody, która ma zostać wywołana
-				//redirect('users/login');
+				redirect('users/login');
 			}
 		}
 	}
